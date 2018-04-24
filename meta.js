@@ -3,13 +3,17 @@ module.exports = {
     {
       type: 'input',
       name: "name",
-      required: true,
-      message: "Project name"
+      message: "Project name",
+      validate(input) {
+        if (!input) {
+            return '项目名不能为空';
+        }
+        return true;
+      }
     },
     {
       type: 'input',
       name: "description",
-      required: true,
       message: "Project description",
       default: "A React.js project"
     },
