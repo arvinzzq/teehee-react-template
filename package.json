@@ -1,20 +1,13 @@
 {
-  "name": "bloom-react-template",
-  "version": "{{ version }}",
+  "name": "{{ name }}",
   "description": "{{ description }}",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zz1211/bloom-react-template.git"
-  },
-  "keywords": "{{ keywords }}",
+  "version": "{{ version }}",
   "author": "{{ author }}",
   "license": "{{ license }}",
-  "bugs": {
-    "url": "https://github.com/zz1211/bloom-react-template/issues"
-  },
-  "homepage": "https://github.com/zz1211/bloom-react-template#readme"
+  "scripts": {},
+  "keywords": [
+  {{#each keywords}}
+    "{{this}}"{{#if @last}}{{else}},{{/if}}
+  {{/each}}
+  ]
 }
