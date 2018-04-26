@@ -6,7 +6,9 @@ import './index.css';
 
 class Hello extends (PureComponent || Component) {
   render() {
-    <App />
+    return (
+      <App />
+    );
   };
 }
 
