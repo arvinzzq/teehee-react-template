@@ -5,11 +5,10 @@
   "author": "{{ author }}",
   "license": "{{ license }}",
   "scripts": {
-    "dev": "node_modules/.bin/webpack-dev-server --mode development",
-    "build": "webpack -p --hide-modules",
-    "lib": "node_modules/.bin/babel src -d lib && cp src/*.css lib",
-    "test": "npm run lib",
-    "release": "npm run build && npm run lib && npm publish"
+    "dev": "node_modules/.bin/webpack-dev-server -d --config config/webpack.dev.config.js",
+    "build": "node_modules/.bin/webpack -p --hide-modules --config config/webpack.prod.config.js",
+    "lib": "npm run build && cp src/*.css lib",
+    "release": "npm run lib && npm publish"
   },
   "keywords": [
   {{#each keywords}}
