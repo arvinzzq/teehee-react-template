@@ -14,11 +14,6 @@ module.exports = {
     },
     {
       type: 'input',
-      name: "author",
-      message: "Author"
-    },
-    {
-      type: 'input',
       name: "license",
       message: "License",
       default: "MIT"
