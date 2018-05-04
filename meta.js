@@ -3,7 +3,7 @@ module.exports = {
     {
       type: 'input',
       name: "description",
-      message: "项目的名称：",
+      message: "项目的描述：",
       default: "A React.js project"
     },
     {
