@@ -1,2 +1,2 @@
-# bloom-react-template
-bloom template of react
+# teehee-react-template
+teehee template of react
